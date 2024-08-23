@@ -157,4 +157,7 @@ sudo ln -s /etc/nginx/sites-available/textutils /etc/nginx/sites-enabled/
 "Restart nginx and allow the changes to take place."
 ```
 sudo systemctl restart nginx
+
+sudo service gunicorn restart
+sudo service nginx restart
 ```
