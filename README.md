@@ -1,4 +1,5 @@
 "# Deploy Django Application using gunicorn & Nginx in Production on AWS Ubuntu server" 
+
 "# we will see how to use nginx with gunicorn to serve django applications in production.Django is a very powerful web framework and ships with a server which is able to facilitate development. This development server is not scalable and is not suited for production. Hence we need to configure gunicorn to get better scalability and nginx can be used as a reverse proxy and as a web server to serve static files. Let's get started" 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/5.webp">
@@ -157,7 +158,6 @@ sudo ln -s /etc/nginx/sites-available/textutils /etc/nginx/sites-enabled/
 "Restart nginx and allow the changes to take place."
 ```
 sudo systemctl restart nginx
-
 sudo service gunicorn restart
 sudo service nginx restart
 ```
