@@ -156,6 +156,30 @@ server {
 ```
 sudo ln -s /etc/nginx/sites-available/textutils /etc/nginx/sites-enabled/
 ```
+# you are experiencing a connection timeout when trying to access the site. Here are some possible reasons and troubleshooting steps:
+#1. Check Firewall Rules
+## Ensure that the firewall is allowing HTTP (port 80) and HTTPS (port 443) traffic:
+```
+sudo ufw allow 'Nginx Full'
+sudo ufw enable
+
+```
+# Then, check the status:
+```
+sudo ufw status
+
+```
+# Verify Nginx Configuration
+```
+sudo nginx -t
+```
+# Check the Application Status
+Ensure that your application (Gunicorn) is running and properly configured to work with Nginx. You can check Gunicorn's status with:
+
+```
+sudo systemctl status gunicorn
+
+```
 "Restart nginx and allow the changes to take place."
 ```
 sudo systemctl restart nginx
