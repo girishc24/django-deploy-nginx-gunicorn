@@ -156,7 +156,7 @@ server {
 ```
 sudo ln -s /etc/nginx/sites-available/textutils /etc/nginx/sites-enabled/
 ```
-# you are experiencing a connection timeout when trying to access the site. Here are some possible reasons and troubleshooting steps:
+you are experiencing a connection timeout when trying to access the site. Here are some possible reasons and troubleshooting steps:
 #1. Check Firewall Rules
 ## Ensure that the firewall is allowing HTTP (port 80) and HTTPS (port 443) traffic:
 ```
