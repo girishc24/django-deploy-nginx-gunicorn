@@ -22,6 +22,7 @@ sudo apt install python3-pip python3-dev nginx
 
 ```
 sudo pip3 install virtualenv
+sudo apt install python3-virtualenv
 ```
 "This will install a virtual environment package in python. Let's create a project directory to host our Django application and create a virtual environment inside that directory."
 ```
